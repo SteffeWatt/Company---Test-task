@@ -1,14 +1,30 @@
 
 body{
     background: lightgray;
+    margin: 0;
 }
 
 .Header {
     display: flex;
-    justify-content: center;
-    padding: 48px;
+    flex-direction: row;
+    padding-top: 12px;
+
     background: aqua;
-    width: 100%;
+    width: 100vw;
+    gap: 24px;
+
+    position: sticky;
+    top: 0;
+}
+
+
+
+.Header img {
+    width: 98px;
+    height: 48px;
+    margin-top: 12px;
+    margin-left: 24px;
+
 }
 
 
@@ -16,14 +32,12 @@ body{
 
     display: flex;
     justify-content: center;
-
-
-
 }
 
 .LoginForm {
     width: 50%;
     height: 350px;
+    margin-top: 48px;
 
 
     text-align: center;
