@@ -5,31 +5,60 @@
     <title>Title</title>
     <link rel="stylesheet" href="Index.css">
     <link rel="icon" href="https://www.wise.no/wise_20_years.ico">
+    <script src="index.js" defer></script>
 </head>
 <body>
 
 <div class="Header">
-    <img src="https://a.storyblok.com/f/100483/472x229/4e7418eb31/wise_20_work.png">
+    <img src="https://a.storyblok.com/f/100483/472x229/4e7418eb31/wise_20_work.png" onclick="ShowLoginPage()">
     <h1>Wise consulting</h1>
 </div>
 
 <div class="Mainbody">
 
-    <div class="LoginForm">
-
+    <div class="LoginForm" id="LoginMainPage">
         <h1>Log in</h1>
+        <div class="LoginInput">
+            <h2>E-mail</h2>
+            <input type="text">
+            <h2>Password</h2>
+            <input type="password">
+            <button onclick="hideLoginPage()">Login</button>
+        </div>
+    </div>
 
+    <div class="DataTable" id="TableSection" style="display: none">
 
+        <h1>Welcome to Wise</h1>
 
-            <div class="LoginInput">
-                <h2>E-mail</h2>
-                <input type="text">
-                <h2>Password</h2>
-                <input type="password">
-
-                <button>Login</button>
+            <h1>Log in</h1>
+            <div class="TableContent">
+                <table class="Table">
+                    <tr class="TableHeader">
+                        <th>Name</th>
+                        <th>Date Joined</th>
+                        <th>E-mail</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Emil</td>
+                        <td>Tobias</td>
+                        <td>Linus</td>
+                        <td>
+                            <div>
+                                <h2>pic 1</h2>
+                                <h2>pic 2</h2>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="AddMoreTablesRow">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h1>+</h1></td>
+                    </tr>
+                </table>
             </div>
-
 
     </div>
 
