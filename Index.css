@@ -26,7 +26,16 @@ body{
     margin-left: 24px;
 
 }
+.Header button{
+    background: #69ef69;
 
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-right: 24px;
+
+    font-size: x-large;
+}
 
 .Mainbody {
 
@@ -88,7 +97,7 @@ body{
 }
 
 
-.LoginInput button:hover{
+button:hover{
     background-color: #93ff93;
     cursor: pointer;
 }
@@ -125,6 +134,22 @@ body{
     border-style: solid;
     border-color: black;
     margin-bottom: 24px;
+
+    text-align: left;
+
+
+}.Table_Icons {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+    margin-right: 24px;
+ }
+
+.Table img{
+    height: 36px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
 }
 
 
@@ -132,9 +157,18 @@ body{
 
     background: lightgray;
     text-align: left;
+
+
+}
+
+.AddMoreTablesRow {
+    background: lightgray;
+
 }
 
 .AddMoreTablesRow h1{
     text-align: right;
     margin-right: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
